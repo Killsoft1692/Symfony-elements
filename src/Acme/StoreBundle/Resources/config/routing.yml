@@ -1,0 +1,11 @@
+acme_store_homepage:
+    path:     /doctrine
+    defaults: { _controller: AcmeStoreBundle:Default:create }
+
+show:
+    path: /doctrine/show/{id}
+    defaults: { _controller: AcmeStoreBundle:Show:index }
+
+relations:
+    path: /doctrine/relations
+    defaults: { _controller: AcmeStoreBundle:Relations:createProduct }

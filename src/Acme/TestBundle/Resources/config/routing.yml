@@ -1,0 +1,4 @@
+
+site:
+    path:     /site
+    defaults: { _controller: AcmeTestBundle:Site:index}
