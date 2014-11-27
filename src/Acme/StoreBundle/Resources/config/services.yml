@@ -1,4 +1,5 @@
 services:
-#    acme_store.example:
-#        class: Acme\StoreBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    acme.twig.store_extension:
+        class: Acme\StoreBundle\Twig\StoreExtension
+        tags:
+            - { name: twig.extension }

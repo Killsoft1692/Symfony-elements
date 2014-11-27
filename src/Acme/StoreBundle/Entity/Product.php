@@ -122,7 +122,7 @@ class Product
      *
      * @return string 
      */
-    public function getDescription()
+        public function getDescription()
     {
         return $this->description;
     }
@@ -149,6 +149,7 @@ class Product
     {
         return $this->category;
     }
+
     /**
      * @ORM\PrePersist
      */

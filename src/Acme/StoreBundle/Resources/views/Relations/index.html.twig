@@ -1,0 +1,31 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+Relation's page
+{% endblock %}
+
+{% block body %}
+    <link href="{{ asset('bundles/acmestore/css/relations.css') }}"rel="stylesheet" type="text/css">
+<font color-interpolation="linearRGB"
+        color="ThreeDHighlight" >
+<h1>Created products in category № {{ id }}:</h1>
+
+   <blockquote>
+       <blockquote>
+           <blockquote>
+
+    <table BGCOLOR="#f0ffff"  BORDER="2" cellpadding="1" cellspacing="5">
+
+    <tr><td> {{ prod1 }}</td></tr>
+        <tr><td>{{ prod2|add|upper|raw}}</td></tr>
+        <tr><td>{{ prod3 }}</td></tr>
+        <tr><td>{{ prod4 }}</td>
+    </tr>
+
+    </table>
+
+           </blockquote>
+       </blockquote>
+   </blockquote>
+</font>
+{% endblock %}
