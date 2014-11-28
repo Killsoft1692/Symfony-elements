@@ -1,17 +1,36 @@
-{% extends 'AcmeDemoBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block title %}Killsoft's page{% endblock %}
 
-{% block content_header '' %}
+{% block body %}
 
-{% block content %}
-    {% set version = constant('Symfony\\Component\\HttpKernel\\Kernel::MAJOR_VERSION') ~ '.' ~ constant('Symfony\\Component\\HttpKernel\\Kernel::MINOR_VERSION')%}
+<div class="container">
+    <header>
+        <h1 class="title"><font color="#228b22"> My super test/homework site</font></h1>
+    </header>
+    <div class="navbar navbar-inverse">
+        <nav class="navbar-inner">
+            <ul class="nav nav-pills">
+                <li><a href="http://localhost/symfony2/web/app_dev.php/site">Site</a></li> </li>
+                <li><a href="http://localhost/symfony2/web/app_dev.php/random/100">Random value</a></li>
+                <li><a href="http://localhost/symfony2/web/app_dev.php/doctrine">Doctrine</a></li>
+                <li><a href="http://localhost/symfony2/web/app_dev.php/doctrine">Entity</a></li>
+                {#<li><a href="http://localhost/symfony2/web/app_dev.php/doctrine/show/1">Find by $id</a></li>#}
+                <li><a href="http://localhost/symfony2/web/app_dev.php/doctrine/relations">Connections in Doctrine</a></li>
+            </ul>
+        </nav>
+</div>
+    <article>
+        <p>
+            This is the page where i'm adding my cool fresh ideas
+            and try to make <h2><font color="#9400d3"> super page</font></h2>
+                <img  width="900" height="900" src="{{ asset('bundles/acmedemo/images/nyan_cat.jpg') }}" />
 
-    <h1 class="title">Hello on my main page!</h1>
+        </p>
+    </article>
+    <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/css3button.css') }}"/>
+    <a href="http://github.com/Killsoft1692" target="_blank"><button class="css3button" name="button" type="button" value="Button">My page on github</button></a>
 
-    <p><h2>Congratulations! <font color="#ff7f50">Symfony</font> .</h2></p>
-    <br>
-    <p> <h3><font color="purple">In this work we try to tell you that is Symfony - the best framework</font></h3>
-
+</div>
 
 {% endblock %}
