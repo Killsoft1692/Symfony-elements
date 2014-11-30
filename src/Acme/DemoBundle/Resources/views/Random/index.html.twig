@@ -1,5 +1,17 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-  It's random Number: {{number}}
+    <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/home_btn.css') }}"/>
+    <div class="container">
+
+        <header>
+            <font color="#9400d3"> <h1>Random(100)</h1></font>
+        </header>
+
+        <article>
+           <p><h2>Here is your number=)<br>
+           <font color="#4682b4">{{number|upper}}</font></h2></p>
+        </article>
+
+    </div>
 {% endblock %}
