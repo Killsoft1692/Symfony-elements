@@ -1,0 +1,6 @@
+root:
+    path: /task
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: task_success
+        permanent: true
