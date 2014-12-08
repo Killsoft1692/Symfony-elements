@@ -9,3 +9,11 @@ show:
 relations:
     path: /doctrine/relations
     defaults: { _controller: AcmeStoreBundle:Relations:createProduct }
+
+product:
+    path: /product
+    defaults: { _controller: AcmeStoreBundle:Product:add }
+
+product_pushed:
+    path: /product_pushed
+    defaults: { _controller: AcmeStoreBundle:Product:index}

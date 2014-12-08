@@ -7,7 +7,6 @@ use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Product
- *
  * @ORM\Table()
  * @ORM\Entity
  * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false)
@@ -166,6 +165,11 @@ class Product
     public function getDeletedAt()
     {
         return $this->deletedAt;
+    }
+
+    public function __toString()
+    {
+        return $this->getName();
     }
 
 }
