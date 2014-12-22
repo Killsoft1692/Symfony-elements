@@ -21,5 +21,18 @@
         {% block javascripts %}
 
         {% endblock %}
+    {% block button %}
+
+        <br>
+
+        <div>
+            <blockquote>
+            <p><a href="{{ path('_welcome') }}">
+                    <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/home_btn.css') }}"/>
+                    <button class="home_btn " name="button" type="button" value="Button">Home</button></a></p>
+            </blockquote>
+        </div>
+
+    {% endblock %}
     </body>
 </html>
